@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="icon" href="https://d30y9cdsu7xlg0.cloudfront.net/png/166411-200.png">
+    <title>Shopping List</title>
+</head>
+<body>
+    <div class="title">Shopping List</div>
+    <div class="container">
+        <div class="wish">
+            <div class="sub-title"> Wish List 
+                <span>
+                    <i id="addI" class="fa fa-plus-circle" aria-hidden="true"></i> 
+                    <i id="expand" class="fa fa-chevron-circle-up" aria-hidden="true"></i>
+                </span>
+            </div>
+            <div class="add" id="addForm">
+                <input id="name" type="text" placeholder="Item Name">
+                <input id="quantity" type="text" placeholder="Quantity">
+                <input id="bib" type="text" placeholder="Buy it before">
+                <button id="add">Add Item</button>
+            </div>
+            <table id="table">
+                <thead>
+                    <tr><th></th> <th>Item Neme</th><th>Q</th><th class="z">Time of add</th><th class="z">Buy it before</th><th>Time you have</th></tr>
+                </thead>
+                <tbody id="tbody">
+                    <tr><td class="x"><i class="fa fa-check-square-o" aria-hidden="true"></i></td>
+                        <td class="y"><i class="fa fa-repeat" aria-hidden="true"></i></td>
+                        <td>Banana</td><td>5</td><td class="x z">2-2-2015</td><td class="x z">2-2-2018</td><td class="y"></td><td class="x"></td>
+                        <td><i class="fa fa-trash-o" aria-hidden="true"></i></td>
+                    </tr>
+                    <tr><td class="x"><i class="fa fa-check-square-o" aria-hidden="true"></i></td>
+                        <td class="y"><i class="fa fa-repeat" aria-hidden="true"></i></td>
+                        <td>Banana</td><td>5</td><td class="x z">2-2-2015</td><td class="x z">2-2-2018</td><td class="y"></td><td class="x"></td>
+                        <td><i class="fa fa-trash-o" aria-hidden="true"></i></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="done">
+            <div class="sub-title">Done List
+                <span>
+                    <i id="expand1" class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+                </span>
+            </div>
+            <table id="table1">
+                <thead><th></th><th>Item Name</th><th>Q</th><th>Date of purchase</th><th></th></thead>
+                <tbody id="tbody1"></tbody>
+            </table>
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>
